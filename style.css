@@ -1,0 +1,212 @@
+
+body {
+    display: flex;
+    align-items: flex-end; /* Align to the bottom */
+    justify-content: flex-end; /* Justify to the right */
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #f0f0f0, #d3d3d3) center/cover no-repeat;
+}
+
+.container {
+    max-width: 300px; /* Adjust the max-width according to your needs */
+    width: 100%; /* Make the container take the full width */
+    padding: 10px; /* Adjust the padding according to your needs */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px; /* Add margin to provide some space from the edges */
+}
+
+
+h1 {
+    font-size: 18px; /* Reduce the font size */
+    background-color: #e3e3e3;
+    color: #17a2b8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 16px; /* Reduce the font size */
+    background-color: #f5f5f5;
+    color: #004080;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #004080;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #00254d;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00254d;
+}
+
+/* Chat bubble styles */
+.user-message, .bot-message {
+    width: 60%;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #004080;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #e0e0e0;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Sample Questions styling */
+.sample-questions h3 {
+    color: #004080;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px; /* Adjusted font size */
+}
+
+.sample-questions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.sample-questions li {
+    margin-bottom: 15px; /* Adjusted margin-bottom for spacing */
+}
+
+.sample-question {
+    padding: 8px 16px; /* Adjusted padding */
+    background-color: #006699; /* Darker blue */
+    color: #fff;
+    border-radius: 10px; /* Increased border-radius */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 14px; /* Smaller font size */
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.sample-question:hover {
+    background-color: #004080; /* Darker hover color */
+}
+
+
+/* Section Cards */
+.section-card {
+    background-color: #2c3e50; /* Dark blue-gray background color */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #3498db, #006699); /* Blue gradient */
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.section-card:hover {
+    transform: scale(1.03);
+}
+
+.section-card a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.section-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.section-card p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Additional Hover Effect */
+.section-card:hover:before {
+    opacity: 1;
+}
+
+
+/* Index and Bye Boxes */
+.index-box, .bye-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.index-box h1, .bye-box h1 {
+    color: #003366;
+}
+
+.index-box p, .bye-box p {
+    color: #555;
+    margin-top: 10px;
+}
